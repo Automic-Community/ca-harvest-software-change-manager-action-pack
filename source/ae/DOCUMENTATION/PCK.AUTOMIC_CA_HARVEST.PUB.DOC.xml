@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
+<DOCU name="PCK.AUTOMIC_CA_HARVEST.PUB.DOC">
+<HEADER state="1">
+<Title>Package Documentation</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<DOCU_Docu state="1" type="text">
+<DOC><![CDATA[About CA Harvest 
+
+================================
+CA Harvest Software Change Manager is a software tool for the configuration management (revision control, SCM, etc.) of source code and other software development assets.
+
+About Automic's CA Harvest Package
+================================
+
+Automate the usage of harvest commands through various actions. These actions are basic building blocks to achieve a specific business goal.
+*Create Package
+*Get Package
+*Promote Package
+*Demote Package
+*Checkout Local 
+
+=Supported Harvest versions=
+* Harvest v12.6
+
+=Limitations=
+* No known limitations.
+
+=Setup=
+* Oracle JRE 1.7 or higher must be installed on Agent OS and "java" must be set as executable on the same.
+* Actions must run on the same machine where the Harvest Client is installed.
+* Verify that the CA_SCM_HOME Environment variable is set to Harvest Client Install directory
+
+=Variables=
+(none)
+
+=Common Input=
+-Broker*:           Specify the hostname of the Harvest Broker. E.g. vviehrv01
+-Port*:               Specify the port number of the Harvest Broker. The default port is 5101. Port range is 1 to 65536.
+-Username*:     Specify the username to connect to the Harvest Broker. E.g. harvest
+-Password*:      Specify the password to connect to the Harvest Broker.
+
+=Actions=
+Following actions are supported for Harvest.
+
+* Action Name: PCK.AUTOMIC_HARVEST.PUB.ACTION.CREATE_PACKAGE
+*  Action Description: This action creates a new change package in a given Harvest project.
+
+* Action Name: PCK.AUTOMIC_HARVEST.PUB.ACTION.DEMOTE_PACKAGE
+* Action Description: This action demotes the package to revert back my promoted package for the required change.
+
+* Action Name: PCK.AUTOMIC_HARVEST.PUB.ACTION.PROMOTE_PACKAGE
+* Action Description: This action promotes the mentioned change package(s) from the given from-state to to-state.
+
+* Action Name:  PCK.AUTOMIC_CA_HARVEST.PUB.ACTION.CHECKOUT_LOCAL
+* Action Description:  This action helps to get files from the repository to the local directory.
+
+* Action Name: PCK.AUTOMIC_HARVEST.PUB.ACTION.GET_PACKAGE
+* Action Description: This action gets the package details in a given Harvest project.
+
+* Action Name: PCK.AUTOMIC_CA_HARVEST.PUB.ACTION.GET_VERSION
+* Action Description: This action retrieves the version details of a Harvest item.
+
+* Action Name: PCK.AUTOMIC_CA_HARVEST.PUB.ACTION.CHECKIN_LOCAL
+* Action Description: This action helps to check in local file(s) to the Harvest repository.
+
+* Action Name:  PCK.AUTOMIC_CA_HARVEST.PUB.ACTION.CHECKOUT_BY_AGENT
+* Action Description:  This action checks out files from a Harvest repository to a host accessed by the specified agent.
+
+* Action Name:  PCK.AUTOMIC_CA_HARVEST.PUB.ACTION.CHECKIN_BY_AGENT
+* Action Description:  This action checks in file(s) to the Harvest repository using a specified file agent.
+
+* Action Name:PCK.AUTOMIC_CA_HARVEST.PUB.ACTION.TAKE_SNAPSHOT 
+* Action Description: This action takes a snapshot for a given project with the latest versions in the view.
+
+]]></DOC>
+</DOCU_Docu>
+</DOCU>
+</uc-export>

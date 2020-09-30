@@ -1,0 +1,14 @@
+# Package Build Configuration
+name: PCK.AUTOMIC_CA_HARVEST
+
+source: ae
+  
+# binary object resource mapping will be defined here
+binaries:
+  
+  - object: RESOURCES/LIBS/PCK.AUTOMIC_CA_HARVEST.PRV.STORE
+    resources: 
+      - name: HARVESTTOOL
+        type: BINARY
+        path: tools/target/harvest-tool.jar
+        version: 1.0.0
