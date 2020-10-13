@@ -22,8 +22,6 @@ Automate the usage of harvest commands through various actions. These actions ar
 *Demote Package
 *Checkout Local 
 
-=Supported Harvest versions=
-* Harvest v12.6
 
 =Limitations=
 * No known limitations.
